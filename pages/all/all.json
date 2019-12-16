@@ -1,0 +1,13 @@
+{ 
+
+ 
+      "pullRefresh": true,
+
+  
+  "usingComponents": {
+    "filter": "mini-antui/es/filter/index",
+    "filter-item": "mini-antui/es/filter/filter-item/index",
+    "search-bar": "mini-antui/es/search-bar/index"
+  }
+  
+}

@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="top">
+    <search-bar value="{{value}}" placeholder="搜索" onSubmit="search" />
+    <button class="btn" onTap="onBtn1Tap">工具
+      <image class="img" src="{{btnIcon1}}" /></button>
+    <button class="btn" onTap="onBtn2Tap">班组
+      <image class="img" src="{{btnIcon2}}" /></button>
+    <button class="btn" onTap="onBtn3Tap">状态
+      <image class="img" src="{{btnIcon3}}" /></button>
+    
+  
+  </view>
+  <filter show="{{filterShow}}" max="{{1}}" onMaskTap="onMaskTap" >
+      <block a:for="{{filterItems}}">
+        <filter-item a:if ="{{item.name==null}}" value="{{item.item}}" id="{{item.id}}"  onChange="handleCallBack"/>
+      </block>
+    </filter>
+  <view class="page-section">
+    <block a:for="{{toolArray}}">
+      <view class="row" style="display:block" data-index="{{index}}" catchTap="tapItem">
+        <view class="row-title list-title">{{item.metering.meteringName}}-{{item.metering.meteringModel}} {{item.meteringRecord.unifyId}}</view>
+        <view class="row-extra list-extra" slot="brief">{{item.meteringRecord.meteringValidity}} {{item.meteringRecord.ddName}}</view>
+        <image class="row-arrow" src="/icon/{{item.meteringRecord.meteringStatus}}.svg" mode="aspectFill" />
+      </view>
+    </block>
+  </view>
+  <view a:if="{{toolArray.length===0}}" class="text">暂无数据</view> 
+</view>

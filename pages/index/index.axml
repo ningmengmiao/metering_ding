@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="top">
+    <button class="topbtn" size="default" type="default" style="color:#3296fa">我的工具 </button>
+    <button class="topbtn" size="default" type="default" catchTap="toAll">所有工具</button>
+  </view>
+  <view class="page-section">
+    <block a:for="{{toolArray}}">
+      <view class="row" style="display:block" data-index="{{index}}" catchTap="tapItem">
+        <view class="row-title list-title">{{item.metering.meteringName}}-{{item.metering.meteringModel}} {{item.meteringRecord.unifyId}}</view>
+        <view class="row-extra list-extra" slot="brief">{{item.meteringRecord.meteringValidity}}</view>
+        <image class="row-arrow" src="/icon/{{item.meteringRecord.meteringStatus}}.svg" mode="aspectFill" />
+      </view>
+    </block>
+  </view>
+  <button class="addbtn" size="default" type="primary" onTap="toAdd">添加工具</button>
+   <button a:if="{{isAdmin}}" class="addbtn" size="default" type="default" onTap="toDownload">工具报表</button>
+  <view class="help">
+    <navigator url="/pages/help/help">帮助</navigator>
+    </view>
+</view> 

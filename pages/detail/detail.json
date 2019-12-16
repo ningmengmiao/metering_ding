@@ -1,0 +1,12 @@
+{     
+  "pullRefresh": true,
+  
+  "usingComponents":{
+    "list": "mini-antui/es/list/index",
+    "list-item": "mini-antui/es/list/list-item/index",
+    "picker-item": "mini-antui/es/picker-item/index",
+    "am-checkbox": "mini-antui/es/am-checkbox/index",
+    "collapse": "mini-antui/es/collapse/index",
+    "collapse-item": "mini-antui/es/collapse/collapse-item/index"
+    }
+}

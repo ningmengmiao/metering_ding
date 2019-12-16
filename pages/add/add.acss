@@ -1,0 +1,43 @@
+.am-list-arrow {
+  right: 8rpx;
+  position: absolute;
+}
+
+.am-list-line {
+  padding-right: 46rpx;
+  min-height: 80rpx;
+}
+
+.am-input-line {
+  font-size: 28rpx;
+}
+.am-input-label{
+  font-size: 28rpx;
+}
+
+.am-input-content {
+  text-align: right;
+  position: absolute;
+  right: 64rpx;
+  font-size: 28rpx;
+}
+
+.am-picker-content {
+  font-size: 28rpx;
+  text-align: right;
+  line-height: 33px;
+  display: inline;
+}
+
+.am.picker-item {
+  font-size: 28rpx;
+}
+.am-picker-label{
+  font-size: 28rpx;
+}
+
+.btn {
+  height: 80rpx;
+  line-height: 80rpx;
+  margin: 32rpx;
+}

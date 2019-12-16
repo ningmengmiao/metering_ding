@@ -1,0 +1,26 @@
+.am-collapse-item-title{
+  width: 686rpx;
+  padding:0 32rpx;
+  
+}
+.am-collapse-item-title-container{
+font-size: 32rpx;
+padding: 0rpx;
+line-height: 72rpx;
+}
+.collapse-item-details{
+
+  margin: 0 32rpx;
+  line-height: 60rpx;
+
+}
+.img{
+
+  display: block;
+}
+.icon{
+
+  width: 32rpx;
+  height: 32rpx;
+  display: inline-block;
+}

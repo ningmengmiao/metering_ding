@@ -1,0 +1,15 @@
+{
+  "pages": [
+  
+    "pages/index/index",
+    "pages/all/all",
+    "pages/detail/detail",
+    "pages/add/add",
+    "pages/download/download",
+    "pages/help/help"
+  ],
+  "window": {
+    "defaultTitle": "智能工具管理平台",
+    "backgroundColor": "#f7f7f7"
+  }
+}

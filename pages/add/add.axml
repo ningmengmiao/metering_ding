@@ -1,0 +1,42 @@
+<view>
+  <view class="container">
+    <list>
+      <picker-item data-field="meteringName"  value="{{meteringName}}" onPickerTap="onMeteringNameTap">
+      技术对象
+      </picker-item>
+      <picker-item data-field="meteringModel"  value="{{meteringModel}}" onPickerTap="onMeteringModelTap" >
+      型号
+      </picker-item>
+      <input-item data-field="meteringClassify" disabled="true" value="{{metering[0].meteringClassify}}" >
+      分类
+      </input-item>
+      <input-item data-field="unifyId"  maxlength="20" placeholder="例如：YK101" onBlur="onUnifyIdBlur">
+      统一编号
+        <view slot="extra" class="extra" onTap="onExtraTap"></view>
+      </input-item>
+      <input-item data-field="manufacturingId" maxlength="20" onBlur="onManufacturingIdBlur">
+     出厂编号
+        <view slot="extra" class="extra" onTap="onExtraTap"></view>
+      </input-item>
+      <picker-item data-field="meteringValidity" placeholder="选择时间" value="{{meteringValidity}}" onPickerTap="onMeteringValidityTap">
+    有效日期
+      </picker-item>
+      <input-item data-field="meteringPeriod" disabled="true" value="{{metering[0].meteringPeriod}}">
+     检定周期
+        <view slot="extra" class="extra" onTap="onExtraTap"></view>
+      </input-item>
+      <input-item data-field="ddName" disabled="true" value="{{name}}">
+     使用人
+        <view slot="extra" class="extra" onTap="onExtraTap"></view>
+      </input-item>
+      <input-item data-field="meteringRange"  value="{{meteringRange}}" onBlur="onMeteringRangeBlur">
+     测量范围
+        <view slot="extra" class="extra" onTap="onExtraTap"></view>
+      </input-item>
+      <view style="padding:0 14rpx; background-color:white;">
+        <textarea style="font-size:28rpx"  maxlength="50" onBlur="onNotesBlur" value="{{notes}}" placeholder="备注" /></view>
+      <view>
+        <button class="btn" type="primary" onTap="finish">完成</button>
+      </view>
+    </list>
+  </view>

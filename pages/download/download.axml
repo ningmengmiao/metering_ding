@@ -1,0 +1,11 @@
+<view class="container">
+  <view class="btnv">
+    <button class="btn" size="mini" type="primary" loading="{{loading1}}" onTap="btn1">发送台账到常用邮箱</button>
+    <text >请将常用邮箱添加到 
+   \n 工作档案>工作主页>邮箱</text> 
+   </view>
+    <view class="btnv">
+      <button class="btn" size="mini" type="primary" loading="{{loading2}}" onTap="btn2">发送台账到指定邮箱</button>
+      <input placeholder="邮箱" value="{{to}}" onBlur="onInputBlur" />
+    </view>
+  </view>

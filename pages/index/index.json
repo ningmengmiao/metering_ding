@@ -1,0 +1,10 @@
+{ 
+"pullRefresh": true,
+      
+  "usingComponents":{
+
+    "list": "../../node_modules/mini-antui/es/list/index",
+    "list-item": "../../node_modules/mini-antui/es/list/list-item/index"
+    
+    }
+}

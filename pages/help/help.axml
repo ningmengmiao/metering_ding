@@ -1,0 +1,59 @@
+<view class="container">
+  <collapse className="demo-collapse" accordion="{{true}}">
+    <collapse-item header="添加工具">
+      <view class="collapse-item-details">
+     在首页点击“添加工具按钮”，进入“添加工具页面”。
+        <image class="img" mode="widthFix" src="../../icon/help/tj1.png"/>
+     添加工具的详细信息。
+        <image class="img" mode="widthFix" src="../../icon/help/tj2.png"/>
+     确认信息无误，完成。
+        <image class="img" mode="widthFix" src="../../icon/help/tj3.png"/>
+      </view>
+    </collapse-item>
+    <collapse-item header="修改工具状态">
+      <view class="collapse-item-details">
+      工具所有状态图示。
+        <view>
+          <image class="icon" mode="scaleToFill" src="../../icon/0.svg"/>报废
+          <image class="icon" mode="scaleToFill" src="../../icon/1.svg"/>封存
+          <image class="icon" mode="scaleToFill" src="../../icon/2.svg"/>在用
+          <image class="icon" mode="scaleToFill" src="../../icon/3.svg"/>已送检
+          <image class="icon" mode="scaleToFill" src="../../icon/4.svg"/>即将过期
+          <image class="icon" mode="scaleToFill" src="../../icon/5.svg"/>已过期
+        </view>
+      
+      工具送检后，点击已过期工具，进入工具详情页。
+        <image class="img" mode="widthFix" src="../../icon/help/xg1.png"/>
+      点击“已送检”按钮，将工具修改为已送检状态，系统不在发送过期提醒。
+        <image class="img" mode="widthFix" src="../../icon/help/xg2.png"/>
+      工具检测完取回后，点击有效期，修改为检签时间。工具转为正常使用状态。
+        <image class="img" mode="widthFix" src="../../icon/help/xg3.png"/>
+      工具报废，点击“已报废”按钮，工具将永久转成报废状态，请谨慎进行操作。
+        <image class="img" mode="widthFix" src="../../icon/help/xg4.png"/>
+      </view>
+    </collapse-item>
+    <collapse-item header="转让工具">
+      <view class="collapse-item-details">
+      工具移交给他人使用后，点击“转让”按钮，选择要转让的同事，转让后系统自动通知接收者。
+        <image class="img" mode="widthFix" src="../../icon/help/zr.png"/>
+      </view>
+    </collapse-item>
+    <collapse-item header="下载报表">
+      <view class="collapse-item-details">
+      点击“工具报表”按钮，进入报表下载页面。
+        <image class="img" mode="widthFix" src="../../icon/help/xz1.png"/>
+      输入接收邮箱，点击“发送”按钮即可发送计量工具报表到指定邮箱。
+        <image class="img" mode="widthFix" src="../../icon/help/xz2.png"/>
+      </view>
+    </collapse-item>
+    <collapse-item header="其他">
+      <view class="collapse-item-details">
+        <text> 
+          筛选支持多条件单选筛选。
+          搜索支持全字符模糊匹配，大小写不敏感。
+          点击标题栏返回页首。
+        </text>
+      </view>
+    </collapse-item>
+  </collapse>
+</view>

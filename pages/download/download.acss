@@ -1,0 +1,37 @@
+.btn {
+  height: 64rpx;
+  line-height: 64rpx;
+  display: inline-block;
+}
+
+.btnv {
+  height: 64rpx;
+  margin: 32rpx;
+}
+
+input {
+  display: inline-block;
+  height: 60rpx;
+  margin-left: 32rpx;
+  width: 300rpx;
+}
+
+.img {
+  height: 32rpx;
+  width: 32rpx;
+  margin-left: 32rpx;
+  margin-bottom: 16rpx;
+}
+
+.popover {
+  display: inline-block;
+  font-size: 16rpx;
+}
+
+text {
+  margin-left: 32rpx;
+  display: inline-block;
+  font-size: 24rpx;
+  line-height: 18rpx;
+  color: #d7d7d7;
+}

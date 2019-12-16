@@ -1,0 +1,81 @@
+<view>
+  <view class="container">
+    <list>
+      <list-item>
+				技术对象说明
+        <view slot="extra">
+						{{item.metering.meteringName}}
+        </view>
+      </list-item>
+      <list-item>
+				型号
+        <view slot="extra">
+						{{item.metering.meteringModel}}
+        </view>
+      </list-item>
+      <list-item>
+				分类
+        <view slot="extra">
+						{{item.metering.meteringClassify}}
+        </view>
+      </list-item>
+      <list-item >
+			  统一编号
+        <view slot="extra">
+						{{item.meteringRecord.unifyId}}
+        </view>
+      </list-item>
+      <list-item >
+			  出厂编号
+        <view slot="extra">
+						{{item.meteringRecord.manufacturingId}}
+        </view>
+      </list-item>
+      <list-item arrow="{{true}}" disabled="{{!isAdmin}}" onClick="datePickerYMD">
+				有效日期
+        <view slot="extra">
+						{{item.meteringRecord.meteringValidity}}
+        </view>
+      </list-item>
+      <list-item >
+				检定周期
+        <view slot="extra">
+						{{item.metering.meteringPeriod}}
+        </view>
+      </list-item>
+      <list-item >
+			  使用人
+        <view slot="extra">
+						{{item.meteringRecord.department}}	{{item.meteringRecord.ddName}}
+        </view>
+      </list-item>
+      <list-item >
+			  测量范围
+        <view slot="extra">
+						{{item.metering.meteringRange}}
+        </view>
+      </list-item>
+      <list-item arrow="{{isAdmin}}" disabled="{{!isAdmin}}" onClick="onStatusTap">
+			  状态
+        <view slot="extra">
+						{{mStatus}}
+        </view>
+      </list-item>
+      <list-item>
+        <collapse>
+          <collapse-item header="记录">
+            <view class="am-collapse-item-text"><text>{{item.meteringRecord.meteringLog}}</text></view>
+          </collapse-item>
+        </collapse>
+      </list-item>
+    </list>
+    <view style="padding:0 14rpx; background-color:white;">
+      <textarea class="tool" disabled="{{user.name!==item.meteringRecord.ddName||!isAdmin}}" data-value="{{value}}" maxlength="50" onBlur="updateNotes" value="{{item.meteringRecord.notes}}" placeholder="备注" /></view>
+    <view style=" margin: 20rpx; color=status(item.mStatusCode)">{{item.mStatus}}</view>
+    <view style="padding:0 32rpx; visibility:{{visibility}};">
+      <button class="btn" type="default" onTap="status0" style="background-color:white">已报废</button>
+      <button class="btn" type="default" onTap="makeOver" style="background-color:white">转让</button>
+      <button class="btn" type="primary" onTap="status3">已送检</button>
+    </view>
+  </view>
+</view>
